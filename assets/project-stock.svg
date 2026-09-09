@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBgStock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0E1A"/>
+      <stop offset="60%" stop-color="#101526"/>
+      <stop offset="100%" stop-color="#080A12"/>
+    </linearGradient>
+
+    <linearGradient id="borderGradStock" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+
+    <linearGradient id="stockTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F0FDFA"/>
+      <stop offset="100%" stop-color="#67E8F9"/>
+    </linearGradient>
+
+    <linearGradient id="pillGradStock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#132338"/>
+      <stop offset="100%" stop-color="#0C1724"/>
+    </linearGradient>
+
+    <style>
+      .mono { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      @keyframes pulseCyan { 0%, 100% { opacity: 0.7; } 50% { opacity: 1; } }
+      .pulsing-cyan { animation: pulseCyan 2.8s infinite; }
+    </style>
+  </defs>
+
+  <!-- Base Card Frame -->
+  <rect x="2" y="2" width="896" height="296" rx="12" fill="url(#cardBgStock)" stroke="url(#borderGradStock)" stroke-width="1.4"/>
+
+  <!-- Card Top Navigation Bar -->
+  <path d="M 2 14 Q 2 2 14 2 L 886 2 Q 898 2 898 14 L 898 38 L 2 38 Z" fill="#0E1624" fill-opacity="0.9"/>
+  <line x1="2" y1="38" x2="898" y2="38" stroke="#06B6D4" stroke-opacity="0.3"/>
+
+  <!-- Window controls -->
+  <circle cx="22" cy="20" r="4.5" fill="#EF4444"/>
+  <circle cx="38" cy="20" r="4.5" fill="#F59E0B"/>
+  <circle cx="54" cy="20" r="4.5" fill="#10B981"/>
+
+  <text x="75" y="24" fill="#67E8F9" font-size="10.5" class="mono" font-weight="bold">REPOSITORY // samanthathippani/stock-intelligence-forecaster</text>
+
+  <!-- Tag Pills on Right -->
+  <g transform="translate(640, 10)">
+    <rect x="0" y="0" width="115" height="20" rx="4" fill="#0E2F3D"/>
+    <circle cx="10" cy="10" r="3" fill="#38BDF8" class="pulsing-cyan"/>
+    <text x="18" y="14" fill="#38BDF8" font-size="9" class="mono" font-weight="bold">PROPHET MODEL</text>
+
+    <rect x="125" y="0" width="110" height="20" rx="4" fill="#122B22"/>
+    <text x="135" y="14" fill="#34D399" font-size="9" class="mono" font-weight="bold">AUTONOMOUS BOT</text>
+  </g>
+
+  <!-- Main Content Body -->
+  <g transform="translate(28, 55)">
+    <!-- Category Stamp -->
+    <text x="0" y="16" fill="#38BDF8" font-size="10" class="mono" font-weight="bold" letter-spacing="1.5">● 02 // TIME-SERIES PREDICTIVE ANALYTICS &amp; AUTOMATION</text>
+    
+    <!-- Title -->
+    <text x="0" y="44" fill="url(#stockTitleGrad)" font-size="22" class="sans" font-weight="900" letter-spacing="1">Stock Intelligence &amp; Forecaster</text>
+    
+    <!-- Summary -->
+    <text x="0" y="68" fill="#94A3B8" font-size="11.5" class="sans">
+      AI-driven stock market prediction web engine deploying Facebook Prophet algorithms over historical data with automated financial reporting and scheduled SMTP email dispatches.
+    </text>
+
+    <!-- 2 Architectural Feature Columns -->
+    <g transform="translate(0, 84)">
+      <!-- Box 1 -->
+      <rect x="0" y="0" width="412" height="75" rx="6" fill="#0C1422" stroke="#06B6D4" stroke-width="0.8" stroke-opacity="0.4"/>
+      <text x="12" y="18" fill="#38BDF8" font-size="9.5" class="mono" font-weight="bold">▸ TIME-SERIES FORECASTING ENGINE</text>
+      <text x="12" y="36" fill="#CBD5E1" font-size="9.5" class="sans">Prophet algorithm models historical patterns across 10+ tickers.</text>
+      <text x="12" y="52" fill="#CBD5E1" font-size="9.5" class="sans">Integrated live data pipelines using yfinance and pandas vectorization.</text>
+
+      <!-- Box 2 -->
+      <rect x="428" y="0" width="412" height="75" rx="6" fill="#0C1422" stroke="#8B5CF6" stroke-width="0.8" stroke-opacity="0.4"/>
+      <text x="12" y="18" fill="#DDD6FE" font-size="9.5" class="mono" font-weight="bold" transform="translate(428, 0)">▸ VISUAL CHARTS &amp; DISPATCH PIPELINE</text>
+      <text x="12" y="36" fill="#CBD5E1" font-size="9.5" class="sans" transform="translate(428, 0)">High-resolution candlestick visualizations via mplfinance/matplotlib.</text>
+      <text x="12" y="52" fill="#CBD5E1" font-size="9.5" class="sans" transform="translate(428, 0)">Automated PDF generation via FPDF with secure SMTP distribution.</text>
+    </g>
+
+    <!-- Tech Stack Pills Row -->
+    <g transform="translate(0, 175)" class="mono" font-size="9.5">
+      <rect x="0" y="0" width="70" height="25" rx="4" fill="url(#pillGradStock)" stroke="#06B6D4" stroke-width="0.8"/>
+      <text x="12" y="16" fill="#38BDF8">Python</text>
+
+      <rect x="78" y="0" width="65" height="25" rx="4" fill="url(#pillGradStock)" stroke="#06B6D4" stroke-width="0.8"/>
+      <text x="88" y="16" fill="#38BDF8">Flask</text>
+
+      <rect x="151" y="0" width="115" height="25" rx="4" fill="url(#pillGradStock)" stroke="#34D399" stroke-width="0.8"/>
+      <text x="161" y="16" fill="#34D399">Prophet Engine</text>
+
+      <rect x="274" y="0" width="80" height="25" rx="4" fill="url(#pillGradStock)" stroke="#06B6D4" stroke-width="0.8"/>
+      <text x="284" y="16" fill="#CBD5E1">Pandas</text>
+
+      <rect x="362" y="0" width="75" height="25" rx="4" fill="url(#pillGradStock)" stroke="#06B6D4" stroke-width="0.8"/>
+      <text x="372" y="16" fill="#CBD5E1">NumPy</text>
+
+      <rect x="445" y="0" width="95" height="25" rx="4" fill="url(#pillGradStock)" stroke="#06B6D4" stroke-width="0.8"/>
+      <text x="455" y="16" fill="#CBD5E1">mplfinance</text>
+
+      <rect x="548" y="0" width="80" height="25" rx="4" fill="url(#pillGradStock)" stroke="#8B5CF6" stroke-width="0.8"/>
+      <text x="558" y="16" fill="#DDD6FE">FPDF API</text>
+
+      <rect x="636" y="0" width="95" height="25" rx="4" fill="url(#pillGradStock)" stroke="#8B5CF6" stroke-width="0.8"/>
+      <text x="646" y="16" fill="#DDD6FE">SMTP Alert</text>
+
+      <rect x="739" y="0" width="101" height="25" rx="4" fill="url(#pillGradStock)" stroke="#06B6D4" stroke-width="0.8"/>
+      <text x="749" y="16" fill="#38BDF8">yfinance API</text>
+    </g>
+
+    <!-- Bottom Telemetry Bar -->
+    <g transform="translate(0, 215)" class="mono" font-size="10">
+      <line x1="0" y1="0" x2="840" y2="0" stroke="#06B6D4" stroke-opacity="0.25"/>
+      <circle cx="6" cy="16" r="3.5" fill="#10B981" class="pulsing-cyan"/>
+      <text x="18" y="20" fill="#34D399" font-weight="bold">SYSTEM STATUS: VERIFIED MODEL PIPELINE // ACCURACY TESTED</text>
+      <text x="625" y="20" fill="#94A3B8">TIMEFRAME // 2025 RELEASE</text>
+    </g>
+  </g>
+</svg>

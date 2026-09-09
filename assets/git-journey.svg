@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="journeyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07070B"/>
+      <stop offset="50%" stop-color="#0C0B17"/>
+      <stop offset="100%" stop-color="#050509"/>
+    </linearGradient>
+
+    <linearGradient id="trunkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="35%" stop-color="#D946EF"/>
+      <stop offset="70%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+
+    <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      .mono { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      @keyframes pulseNode { 0%, 100% { r: 6; opacity: 0.8; } 50% { r: 8.5; opacity: 1; } }
+      @keyframes pulseRing { 0% { r: 7; opacity: 0.8; } 100% { r: 16; opacity: 0; } }
+      .glowing-node { animation: pulseNode 3s infinite ease-in-out; }
+      .pulsing-ring { animation: pulseRing 2s infinite ease-out; }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="900" height="360" rx="12" fill="url(#journeyBg)" stroke="#8B5CF6" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- Header Deck -->
+  <g transform="translate(30, 24)">
+    <circle cx="6" cy="10" r="3.5" fill="#F472B6"/>
+    <text x="18" y="14" fill="#DDD6FE" font-size="13" class="sans" font-weight="800" letter-spacing="1">ENGINEERING_JOURNEY // GIT COMMIT TIMELINE</text>
+    <text x="18" y="30" fill="#94A3B8" font-size="9.5" class="mono">BRANCH: refs/heads/main • CONTINUOUS EVOLUTION &amp; ACADEMIC RIGOR</text>
+  </g>
+
+  <!-- Git Trunk Pathway (Horizontal layout with branching curves) -->
+  <g transform="translate(60, 160)">
+    <!-- Base trunk line -->
+    <line x1="30" y1="0" x2="750" y2="0" stroke="url(#trunkGrad)" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Feature Branch Bezier Loops -->
+    <path d="M 60 0 C 120 -45, 170 -45, 230 0" fill="none" stroke="#D946EF" stroke-width="1.8" stroke-dasharray="3 3" opacity="0.6"/>
+    <path d="M 270 0 C 340 45, 410 45, 480 0" fill="none" stroke="#38BDF8" stroke-width="1.8" stroke-dasharray="3 3" opacity="0.6"/>
+    <path d="M 520 0 C 580 -45, 640 -45, 700 0" fill="none" stroke="#10B981" stroke-width="1.8" stroke-dasharray="3 3" opacity="0.6"/>
+
+    <!-- ================= NODE 1: 2023 - 2024 ================= -->
+    <g transform="translate(60, 0)">
+      <circle cx="0" cy="0" r="14" fill="#8B5CF6" fill-opacity="0.2"/>
+      <circle cx="0" cy="0" r="7" fill="#8B5CF6" stroke="#FFFFFF" stroke-width="2" filter="url(#nodeGlow)"/>
+      
+      <!-- Top Callout Box -->
+      <g transform="translate(-80, -115)">
+        <rect width="165" height="85" rx="6" fill="#121024" stroke="#8B5CF6" stroke-width="0.8"/>
+        <text x="10" y="16" fill="#A78BFA" font-size="9" class="mono" font-weight="bold">[c0d3:01] 2023 - 2024</text>
+        <text x="10" y="32" fill="#FFFFFF" font-size="10.5" class="sans" font-weight="bold">FOUNDATIONS</text>
+        <text x="10" y="48" fill="#CBD5E1" font-size="8.5" class="mono">• B.Tech IT @ TKRCET</text>
+        <text x="10" y="62" fill="#CBD5E1" font-size="8.5" class="mono">• C, Python, SQL, HTML</text>
+        <text x="10" y="76" fill="#CBD5E1" font-size="8.5" class="mono">• Data Structures &amp; Logic</text>
+      </g>
+    </g>
+
+    <!-- ================= NODE 2: 2025 ================= -->
+    <g transform="translate(270, 0)">
+      <circle cx="0" cy="0" r="14" fill="#D946EF" fill-opacity="0.2"/>
+      <circle cx="0" cy="0" r="7" fill="#D946EF" stroke="#FFFFFF" stroke-width="2" filter="url(#nodeGlow)"/>
+
+      <!-- Bottom Callout Box -->
+      <g transform="translate(-80, 25)">
+        <rect width="175" height="95" rx="6" fill="#141026" stroke="#D946EF" stroke-width="0.8"/>
+        <text x="10" y="16" fill="#F472B6" font-size="9" class="mono" font-weight="bold">[7f8a:02] 2025</text>
+        <text x="10" y="32" fill="#FFFFFF" font-size="10.5" class="sans" font-weight="bold">AI &amp; PREDICTIVE ANALYTICS</text>
+        <text x="10" y="48" fill="#CBD5E1" font-size="8.5" class="mono">• Stock Market Forecaster</text>
+        <text x="10" y="62" fill="#CBD5E1" font-size="8.5" class="mono">• IIT Kanpur NPTEL Cert</text>
+        <text x="10" y="76" fill="#CBD5E1" font-size="8.5" class="mono">• SAWiT GenAI Learnathon</text>
+        <text x="10" y="89" fill="#CBD5E1" font-size="8.5" class="mono">• Google Gemini Academy</text>
+      </g>
+    </g>
+
+    <!-- ================= NODE 3: 2026 ================= -->
+    <g transform="translate(500, 0)">
+      <circle cx="0" cy="0" r="16" fill="#38BDF8" fill-opacity="0.2"/>
+      <circle cx="0" cy="0" r="8" fill="#38BDF8" stroke="#FFFFFF" stroke-width="2" class="glowing-node" filter="url(#nodeGlow)"/>
+
+      <!-- Top Callout Box -->
+      <g transform="translate(-85, -125)">
+        <rect width="180" height="95" rx="6" fill="#0E1629" stroke="#38BDF8" stroke-width="1"/>
+        <text x="10" y="16" fill="#38BDF8" font-size="9" class="mono" font-weight="bold">[b4c2:03] 2026 (CURRENT)</text>
+        <text x="10" y="32" fill="#FFFFFF" font-size="10.5" class="sans" font-weight="bold">CLOUD, AI &amp; INNOVATION</text>
+        <text x="10" y="48" fill="#CBD5E1" font-size="8.5" class="mono">• EduTape PWA Flagship</text>
+        <text x="10" y="62" fill="#CBD5E1" font-size="8.5" class="mono">• SPARKEXPO &amp; IDEONEX'26</text>
+        <text x="10" y="76" fill="#CBD5E1" font-size="8.5" class="mono">• IIT Madras Python Cert</text>
+        <text x="10" y="89" fill="#CBD5E1" font-size="8.5" class="mono">• UptoSkills AI Internship</text>
+      </g>
+    </g>
+
+    <!-- ================= NODE 4: 2027 ================= -->
+    <g transform="translate(730, 0)">
+      <circle cx="0" cy="0" r="18" fill="#10B981" fill-opacity="0.2"/>
+      <circle cx="0" cy="0" r="8" fill="#10B981" stroke="#FFFFFF" stroke-width="2" filter="url(#nodeGlow)"/>
+      <circle cx="0" cy="0" r="14" fill="none" stroke="#34D399" stroke-width="1.2" class="pulsing-ring"/>
+
+      <!-- Bottom Callout Box -->
+      <g transform="translate(-85, 25)">
+        <rect width="175" height="85" rx="6" fill="#0C1D1A" stroke="#10B981" stroke-width="0.8"/>
+        <text x="10" y="16" fill="#34D399" font-size="9" class="mono" font-weight="bold">[HEAD -> main] 2027</text>
+        <text x="10" y="32" fill="#FFFFFF" font-size="10.5" class="sans" font-weight="bold">SOFTWARE ARCHITECT</text>
+        <text x="10" y="48" fill="#CBD5E1" font-size="8.5" class="mono">• B.Tech Graduation (IT)</text>
+        <text x="10" y="62" fill="#CBD5E1" font-size="8.5" class="mono">• Scalable Cloud Systems</text>
+        <text x="10" y="76" fill="#CBD5E1" font-size="8.5" class="mono">• Production Engineering</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Connective Nodes indicator -->
+  <g transform="translate(30, 325)" class="mono" font-size="9" fill="#64748B">
+    <text x="0" y="12">GIT_STATUS // FAST-FORWARD COMMITS • CLEAN MERGE INTO PRODUCTION</text>
+  </g>
+</svg>

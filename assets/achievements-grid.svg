@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="achBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07070B"/>
+      <stop offset="50%" stop-color="#0A0A14"/>
+      <stop offset="100%" stop-color="#050508"/>
+    </linearGradient>
+
+    <linearGradient id="achCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141224" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0C0B17" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="violetBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#D946EF" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="cyanBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <style>
+      .mono { font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="900" height="360" rx="12" fill="url(#achBg)" stroke="#8B5CF6" stroke-width="1" stroke-opacity="0.25"/>
+
+  <!-- Header -->
+  <g transform="translate(30, 24)">
+    <circle cx="6" cy="10" r="3.5" fill="#38BDF8"/>
+    <text x="18" y="14" fill="#DDD6FE" font-size="13" class="sans" font-weight="800" letter-spacing="1">ACHIEVEMENT_REGISTRY // VERIFIED CREDENTIALS &amp; EXPOS</text>
+    <text x="18" y="30" fill="#94A3B8" font-size="9.5" class="mono">CRYPTOGRAPHIC &amp; INSTITUTIONAL VERIFICATION RECORD</text>
+  </g>
+
+  <!-- Grid of 8 Glass Cards (2 rows x 4 columns) -->
+  <!-- ROW 1 -->
+  <!-- Card 1: IIT Madras -->
+  <g transform="translate(30, 68)">
+    <rect width="198" height="115" rx="7" fill="url(#achCard)" stroke="url(#violetBorder)" stroke-width="1"/>
+    <circle cx="16" cy="18" r="3" fill="#A78BFA"/>
+    <text x="26" y="22" fill="#A78BFA" font-size="8.5" class="mono" font-weight="bold">IIT MADRAS // NPTEL</text>
+    <text x="14" y="44" fill="#FFFFFF" font-size="10.5" class="sans" font-weight="bold">Python for Data Science</text>
+    <text x="14" y="62" fill="#94A3B8" font-size="8.5" class="mono">ID: NPTEL26CS80S457305063</text>
+    <text x="14" y="80" fill="#CBD5E1" font-size="8.5" class="sans">Data analysis, NumPy, stats</text>
+    <rect x="14" y="93" width="70" height="14" rx="3" fill="#241B3D"/>
+    <text x="20" y="103" fill="#C084FC" font-size="7.5" class="mono">VERIFIED</text>
+  </g>
+
+  <!-- Card 2: IIT Kanpur -->
+  <g transform="translate(244, 68)">
+    <rect width="198" height="115" rx="7" fill="url(#achCard)" stroke="url(#cyanBorder)" stroke-width="1"/>
+    <circle cx="16" cy="18" r="3" fill="#38BDF8"/>
+    <text x="26" y="22" fill="#38BDF8" font-size="8.5" class="mono" font-weight="bold">IIT KANPUR // NPTEL</text>
+    <text x="14" y="44" fill="#FFFFFF" font-size="10.5" class="sans" font-weight="bold">Data Analysis &amp; Decision</text>
+    <text x="14" y="62" fill="#94A3B8" font-size="8.5" class="mono">ID: NPTEL25MG125S958205976</text>
+    <text x="14" y="80" fill="#CBD5E1" font-size="8.5" class="sans">Statistical modeling &amp; logic</text>
+    <rect x="14" y="93" width="70" height="14" rx="3" fill="#14263B"/>
+    <text x="20" y="103" fill="#38BDF8" font-size="7.5" class="mono">VERIFIED</text>
+  </g>
+
+  <!-- Card 3: Google Gemini Academy -->
+  <g transform="translate(458, 68)">
+    <rect width="198" height="115" rx="7" fill="url(#achCard)" stroke="url(#violetBorder)" stroke-width="1"/>
+    <circle cx="16" cy="18" r="3" fill="#F472B6"/>
+    <text x="26" y="22" fill="#F472B6" font-size="8.5" class="mono" font-weight="bold">GOOGLE &amp; STTAR</text>
+    <text x="14" y="44" fill="#FFFFFF" font-size="10.5" class="sans" font-weight="bold">Gemini Academy</text>
+    <text x="14" y="62" fill="#94A3B8" font-size="8.5" class="mono">GenAI in Higher Education</text>
+    <text x="14" y="80" fill="#CBD5E1" font-size="8.5" class="sans">Gemini API &amp; LLM workflows</text>
+    <rect x="14" y="93" width="70" height="14" rx="3" fill="#2D1432"/>
+    <text x="20" y="103" fill="#F472B6" font-size="7.5" class="mono">CERTIFIED</text>
+  </g>
+
+  <!-- Card 4: Microsoft Copilot -->
+  <g transform="translate(672, 68)">
+    <rect width="198" height="115" rx="7" fill="url(#achCard)" stroke="url(#cyanBorder)" stroke-width="1"/>
+    <circle cx="16" cy="18" r="3" fill="#34D399"/>
+    <text x="26" y="22" fill="#34D399" font-size="8.5" class="mono" font-weight="bold">MICROSOFT</text>
+    <text x="14" y="44" fill="#FFFFFF" font-size="10.5" class="sans" font-weight="bold">MS 365 Copilot Chat</text>
+    <text x="14" y="62" fill="#94A3B8" font-size="8.5" class="mono">Assessment Passed</text>
+    <text x="14" y="80" fill="#CBD5E1" font-size="8.5" class="sans">Productivity AI systems</text>
+    <rect x="14" y="93" width="70" height="14" rx="3" fill="#142B23"/>
+    <text x="20" y="103" fill="#34D399" font-size="7.5" class="mono">PASSED</text>
+  </g>
+
+  <!-- ROW 2 -->
+  <!-- Card 5: IBM SkillsBuild -->
+  <g transform="translate(30, 200)">
+    <rect width="198" height="115" rx="7" fill="url(#achCard)" stroke="url(#cyanBorder)" stroke-width="1"/>
+    <circle cx="16" cy="18" r="3" fill="#38BDF8"/>
+    <text x="26" y="22" fill="#38BDF8" font-size="8.5" class="mono" font-weight="bold">IBM SKILLSBUILD</text>
+    <text x="14" y="44" fill="#FFFFFF" font-size="10.5" class="sans" font-weight="bold">Intro to Generative AI</text>
+    <text x="14" y="62" fill="#94A3B8" font-size="8.5" class="mono">Prompt &amp; Model Architecture</text>
+    <text x="14" y="80" fill="#CBD5E1" font-size="8.5" class="sans">Neural foundation concepts</text>
+    <rect x="14" y="93" width="70" height="14" rx="3" fill="#14263B"/>
+    <text x="20" y="103" fill="#38BDF8" font-size="7.5" class="mono">CERTIFIED</text>
+  </g>
+
+  <!-- Card 6: SAWiT Learnathon -->
+  <g transform="translate(244, 200)">
+    <rect width="198" height="115" rx="7" fill="url(#achCard)" stroke="url(#violetBorder)" stroke-width="1"/>
+    <circle cx="16" cy="18" r="3" fill="#F472B6"/>
+    <text x="26" y="22" fill="#F472B6" font-size="8.5" class="mono" font-weight="bold">SAWiT LEARNATHON</text>
+    <text x="14" y="44" fill="#FFFFFF" font-size="10.5" class="sans" font-weight="bold">GenAI Fundamentals</text>
+    <text x="14" y="62" fill="#94A3B8" font-size="8.5" class="mono">Certificate of Achievement</text>
+    <text x="14" y="80" fill="#CBD5E1" font-size="8.5" class="sans">Hands-on AI immersion</text>
+    <rect x="14" y="93" width="70" height="14" rx="3" fill="#2D1432"/>
+    <text x="20" y="103" fill="#F472B6" font-size="7.5" class="mono">HONOR</text>
+  </g>
+
+  <!-- Card 7: SPARKEXPO-26 -->
+  <g transform="translate(458, 200)">
+    <rect width="198" height="115" rx="7" fill="url(#achCard)" stroke="url(#violetBorder)" stroke-width="1"/>
+    <circle cx="16" cy="18" r="3" fill="#A78BFA"/>
+    <text x="26" y="22" fill="#A78BFA" font-size="8.5" class="mono" font-weight="bold">SPARKEXPO-26</text>
+    <text x="14" y="44" fill="#FFFFFF" font-size="10.5" class="sans" font-weight="bold">EduTape PWA Demo</text>
+    <text x="14" y="62" fill="#94A3B8" font-size="8.5" class="mono">TKR College of Eng &amp; Tech</text>
+    <text x="14" y="80" fill="#CBD5E1" font-size="8.5" class="sans">Live prototype demonstration</text>
+    <rect x="14" y="93" width="70" height="14" rx="3" fill="#241B3D"/>
+    <text x="20" y="103" fill="#C084FC" font-size="7.5" class="mono">EXPO EXHIBIT</text>
+  </g>
+
+  <!-- Card 8: IDEONEX'26 -->
+  <g transform="translate(672, 200)">
+    <rect width="198" height="115" rx="7" fill="url(#achCard)" stroke="url(#cyanBorder)" stroke-width="1"/>
+    <circle cx="16" cy="18" r="3" fill="#34D399"/>
+    <text x="26" y="22" fill="#34D399" font-size="8.5" class="mono" font-weight="bold">IDEONEX'26 // IEEE</text>
+    <text x="14" y="44" fill="#FFFFFF" font-size="10.5" class="sans" font-weight="bold">National Project Expo</text>
+    <text x="14" y="62" fill="#94A3B8" font-size="8.5" class="mono">IEEE Student Branch &amp; IT</text>
+    <text x="14" y="80" fill="#CBD5E1" font-size="8.5" class="sans">Engineering showcase delegate</text>
+    <rect x="14" y="93" width="70" height="14" rx="3" fill="#142B23"/>
+    <text x="20" y="103" fill="#34D399" font-size="7.5" class="mono">DELEGATE</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="30" y="340" fill="#64748B" font-size="8.5" class="mono">ALL CREDENTIALS VERIFIED &amp; INDEXED FROM OFFICIAL TRANSCRIPTS</text>
+</svg>
